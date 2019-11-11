@@ -8,8 +8,18 @@ body {
     max-width: max-content;
     margin:0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    }
+    button 
+    {
+        background: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        color: #f4f4f4;
+        margin: 30px;
+        padding: 15px;
+        font-weight: 600;
     }
 .card {
     margin: calc(0.5%);
@@ -23,7 +33,7 @@ body {
     width: min-content;      
     
 }
-.card:hover {
+.card:hover, button:active{
     box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
     transform: translate3D(0, -2px, 0);
 }
@@ -35,6 +45,7 @@ h2 {
     text-align: center;
     padding: 1rem;
     background-image: linear-gradient(120deg, #2F4F4F 0%, #C0C0C0 70%);
+    opacity: 0.5;
     margin: 0;
     font-size: 20px;
     width: 100%;
