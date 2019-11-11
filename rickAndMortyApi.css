@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-align: center;
+}
+#root {
+    max-width: max-content;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+.card {
+    margin: calc(0.5%);
+    background: #fff;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;      
+    
+}
+.card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+}
+img {
+    display: block;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    padding: 1rem;
+    background-image: linear-gradient(120deg, #2F4F4F 0%, #C0C0C0 70%);
+    margin: 0;
+    font-size: 20px;
+    width: 100%;
+}
+.container, .footer{
+    padding: calc(1%);
+    background-image: linear-gradient(120deg, #C0C0C0 0%, #2F4F4F 90%);
+    margin:1rem 0px;   
+    font-weight: 600;
+}
+.footer{
+    margin: 2rem 0 0 0;
+}
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+h3, p{
+    font-size: 15px;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
