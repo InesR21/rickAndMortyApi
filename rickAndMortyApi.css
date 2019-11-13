@@ -11,9 +11,10 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     }
-    button 
+button 
     {
         background: black;
+        box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
         border: 2px solid black;
         border-radius: 5px;
         color: #f4f4f4;
@@ -25,7 +26,7 @@ body {
     margin: calc(0.5%);
     background: #fff;
     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-    border-radius: 12px;
+    border-radius: 5px;
     overflow: hidden;
     transition: all .2s linear;
     display: flex;
