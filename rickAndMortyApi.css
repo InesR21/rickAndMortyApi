@@ -72,3 +72,71 @@ a {
     text-decoration: none;
     color: #fff;
 }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    /* Sit on top */
+    left: calc(20%);
+    top: calc(25%);;
+    width: calc(60%); /* Full width */
+    height: calc(50%); /* Full height */
+    overflow-x: none; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    border-radius: 1%;
+    overflow-y: auto;
+  }
+  /* The Close Button */
+  .close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .close:hover,
+  .close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Modal Header */
+    .modal-header {
+        padding: 16px 16px;
+        background-image: linear-gradient(120deg, #2F4F4F 0%, #C0C0C0 70%);
+        color: white;
+        margin: 0 0 calc(1%) 0 ;
+        
+    }
+    /* Modal Body */
+    .modal-body {
+        padding: 2px 16px; 
+        text-align: start;
+    }
+    /* Modal Footer */
+    .modal-footer {
+        padding: 15px 0px;
+        background-image: linear-gradient(120deg, #C0C0C0 0%, #2F4F4F 90%);
+        color: white;
+        bottom: 0;
+        position: absolute;
+        width: calc(100%);
+    }
+    h4{
+        display: inline;
+    }
+    #imgModel {
+        display: block;
+        margin: 5px 15px;
+        max-width:calc(20%);
+        max-height: calc(20%);
+        float: left;
+        border: 3px solid gray;
+        border-radius: 2px;
+    }
+    .status, .gender, .created{
+        margin: 15px;
+        font-size: 18px;
+    }
