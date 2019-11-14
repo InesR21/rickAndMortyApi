@@ -50,13 +50,19 @@
         const modalBody = document.createElement('div');
         const modalFooter = document.createElement('div');
         const name = document.createElement('h4');
-        const status = document.createElement('p');
         const url = document.createElement('a');
         const close = document.createElement('span');
         const imgModel = document.createElement('img');
         const gender = document.createElement('p');
+        const genderSpan = document.createElement('span');
+        const genderDiv = document.createElement('div');
+        const status = document.createElement('p');
+        const statusSpan = document.createElement('span');
+        const statusDiv = document.createElement('div');
         const created = document.createElement('p');
-        /******************************* */
+        const createdSpan = document.createElement('span');
+        const createdDiv = document.createElement('div');
+        /*****************************************************************/
         close.setAttribute('class', 'close');
         modal.setAttribute('class', 'modal');
         imgModel.setAttribute('id', 'imgModel')
@@ -64,30 +70,47 @@
         modalBody.setAttribute('class', 'modal-body');
         modalFooter.setAttribute('class', 'modal-footer');
         status.setAttribute('class', 'status');
+        statusDiv.setAttribute('class', 'statusDiv');
         gender.setAttribute('class', 'gender');
+        genderDiv.setAttribute('class', 'genderDiv');
         created.setAttribute('class', 'created');
-        /***************************************************** */
+        createdDiv.setAttribute('class', 'createdDiv');
+
+        /*******************************************************************/
         imgModel.src = imgSrc.image;
         name.textContent = imgSrc.name;
-        status.textContent = `Este es status del Personaje: ${imgSrc.status}.`
-        gender.textContent = `Este es genero del Personaje: ${imgSrc.gender}.`
-        created.textContent = `El Personaje fue creado el : ${imgSrc.created}.`
+        status.textContent = imgSrc.status
+        statusSpan.textContent = 'STATUS |'
+        genderSpan.textContent = 'Genero |'
+        createdSpan.textContent = 'Creado |'
+        gender.textContent = imgSrc.gender
+        created.textContent =imgSrc.created
         url.href ='https://rickandmortyapi.com/';
         url.textContent = 'Ver Documentacion oficial de esta API'
         close.textContent = 'x';
-        /***************************************************** */
+        /*********************************************************************/
         caja.appendChild(modal);
         modalHeader.appendChild(name);
         modalHeader.appendChild(close);
         modalBody.appendChild(imgModel);
-        modalBody.appendChild(status);
-        modalBody.appendChild(gender);
-        modalBody.appendChild(created);
+        statusDiv.appendChild(statusSpan);
+        statusDiv.appendChild(status);
+
+        genderDiv.appendChild(genderSpan);
+        genderDiv.appendChild(gender);
+        
+        createdDiv.appendChild(createdSpan);
+        createdDiv.appendChild(created);
+
+        modalBody.appendChild(statusDiv);
+        modalBody.appendChild(genderDiv);
+        modalBody.appendChild(createdDiv);
+
         modalFooter.appendChild(url);
         modal.appendChild(modalHeader);
         modal.appendChild(modalBody);
         modal.appendChild(modalFooter);
-        /******************************************************* */        
+        /**********************************************************************/        
         modal.style.display = 'block'
         close.onclick = function() {
             modal.style.display = "none";
