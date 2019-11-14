@@ -112,10 +112,5 @@
         modal.appendChild(modalFooter);
         /**********************************************************************/        
         modal.style.display = 'block'
-        close.onclick = function() {
-            modal.style.display = "none";
-        }
-        
-    
-    
+        close.onclick = () => {modal.style.display = "none";}
 }
